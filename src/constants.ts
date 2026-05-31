@@ -1,6 +1,6 @@
 export const LINKS = {
-  MARKETPLACE_URL: "https://workspace.google.com/marketplace/app/label_maker/xxxxxxxxxxx",
-  TWITTER_URL: "https://twitter.com/xxxxxxxxxx",
+  MARKETPLACE_URL: "https://workspace.google.com/marketplace/app/details/271995761092",
+  TWITTER_URL: "https://twitter.com/averylabelmerge",
   HELP_CENTER_URL: "https://opentemply-label-maker.gitbook.io/label-maker-knowledge-base",
   GOOGLE_API_TERMS_URL: "https://developers.google.com/terms/api-services-user-data-policy",
   SUPPORT_EMAIL_URL: "mailto:support@opentemply.com",
