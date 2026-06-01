@@ -16,7 +16,7 @@ export function FAQ() {
     },
     {
       q: "Can I merge data from Google Sheets?",
-      a: "Absolutely! Connect any Google Sheets spreadsheet with one click. Then insert merge fields like {{name}}, {{address}}, or {{city}} into your label. Avery Label Merge will create a personalized label for each row in your spreadsheet."
+      a: "Absolutely! Connect any Google Sheets spreadsheet with one click. Then insert merge fields like <<name>>, <<address>>, or <<city>> into your label. Avery Label Merge will create a personalized label for each row in your spreadsheet."
     },
     {
       q: "How can I avoid white borders when printing?",

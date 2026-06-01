@@ -8,7 +8,7 @@ export function Features() {
     {
       icon: <span className="material-symbols-outlined text-[24px]">difference</span>,
       title: "One-Click Mail Merge",
-      description: "Connect Google Sheets and insert merge fields like {{name}} or {{address}}. Turn hundreds of rows into personalized labels."
+      description: "Connect Google Sheets and insert merge fields like <<name>> or <<address>>. Turn hundreds of rows into personalized labels."
     },
     {
       icon: <span className="material-symbols-outlined text-[24px]">crop_free</span>,
@@ -78,7 +78,7 @@ export function HowItWorks() {
             {
               step: "2",
               title: "Design Your Label",
-              desc: "Add text, images, or merge fields from Google Sheets. Style it however you like — fonts, colors, logos."
+              desc: "Add text, images, or merge fields from Google Docs. Style it however you like — fonts, colors, logos."
             },
             {
               step: "3",
@@ -116,18 +116,18 @@ export function Showcase() {
                    <div className="w-1/3 border-r border-slate-200 pr-4">
                      <div className="h-4 bg-slate-200 rounded mb-4 w-1/2"></div>
                      <div className="space-y-2">
-                       <div className="h-8 bg-primary-50 text-xs text-primary-700 font-medium flex items-center px-2 rounded border border-primary-200">{"{{First Name}}"}</div>
-                       <div className="h-8 bg-primary-50 text-xs text-primary-700 font-medium flex items-center px-2 rounded border border-primary-200">{"{{Last Name}}"}</div>
-                       <div className="h-8 bg-primary-50 text-xs text-primary-700 font-medium flex items-center px-2 rounded border border-primary-200">{"{{Address}}"}</div>
+                       <div className="h-8 bg-primary-50 text-xs text-primary-700 font-medium flex items-center px-2 rounded border border-primary-200">{"<<First Name>>"}</div>
+                       <div className="h-8 bg-primary-50 text-xs text-primary-700 font-medium flex items-center px-2 rounded border border-primary-200">{"<<Last Name>>"}</div>
+                       <div className="h-8 bg-primary-50 text-xs text-primary-700 font-medium flex items-center px-2 rounded border border-primary-200">{"<<Address>>"}</div>
                      </div>
                    </div>
                    <div className="flex-1 border border-dashed border-slate-300 bg-white rounded p-4 flex flex-col justify-center items-center">
                       <div className="w-3/4 h-32 border border-slate-200 shadow-sm rounded-sm p-3 flex flex-col justify-center">
                         <div className="font-bold text-sm text-slate-800 flex gap-1 mb-1">
-                          <span className="bg-primary-100 text-primary-800 px-1 rounded">{"{{First Name}}"}</span>
-                          <span className="bg-primary-100 text-primary-800 px-1 rounded">{"{{Last Name}}"}</span>
+                          <span className="bg-primary-100 text-primary-800 px-1 rounded">{"<<First Name>>"}</span>
+                          <span className="bg-primary-100 text-primary-800 px-1 rounded">{"<<Last Name>>"}</span>
                         </div>
-                        <div className="text-xs text-slate-600 bg-primary-100 text-primary-800 px-1 rounded inline-block self-start">{"{{Address}}"}</div>
+                        <div className="text-xs text-slate-600 bg-primary-100 text-primary-800 px-1 rounded inline-block self-start">{"<<Address>>"}</div>
                       </div>
                    </div>
                  </div>
