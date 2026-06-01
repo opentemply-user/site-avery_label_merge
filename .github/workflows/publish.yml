@@ -21,7 +21,11 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install --unsafe-perm
+        run: |
+          # remove lockfile and reinstall so native optional deps build correctly
+          rm -f package-lock.json
+          rm -rf node_modules
+          npm install --unsafe-perm
 
       - name: Build and publish
         env:
