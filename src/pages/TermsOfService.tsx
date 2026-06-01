@@ -38,7 +38,7 @@ export function TermsOfService() {
           The Service is available through Google Workspace Marketplace and hosted at:
         </p>
         <p className="mb-4 font-semibold text-slate-800">
-          labelmaker.opentemply.com
+          averylabelmerge.opentemply.com
         </p>
 
         <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">2. Eligibility</h2>

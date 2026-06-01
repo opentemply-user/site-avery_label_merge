@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://labelmaker.opentemply.com/sitemap.xml
+Sitemap: https://averylabelmerge.opentemply.com/sitemap.xml

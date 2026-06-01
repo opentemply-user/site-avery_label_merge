@@ -15,7 +15,7 @@ export function PrivacyPolicy() {
           Effective Date: May 18, 2026
         </p>
         <p className="mb-4">
-          OpenTemply (“OpenTemply”, “we”, “our”, or “us”) operates the Avery Label Merge for Google Docs & Sheets add-on (“Avery Label Merge” or the “Service”), available through Google Workspace Marketplace and hosted at labelmaker.opentemply.com.
+          OpenTemply (“OpenTemply”, “we”, “our”, or “us”) operates the Avery Label Merge for Google Docs & Sheets add-on (“Avery Label Merge” or the “Service”), available through Google Workspace Marketplace and hosted at averylabelmerge.opentemply.com.
         </p>
         <p className="mb-4">
           We are committed to protecting your privacy and handling Google user data responsibly and transparently. This Privacy Policy explains what information we access, how we use it, how we protect it, and your rights regarding your data.
