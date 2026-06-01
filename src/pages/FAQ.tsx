@@ -8,7 +8,7 @@ export function FAQ() {
   const faqs = [
     {
       q: "What label brands are supported?",
-      a: "We support 5,000+ templates from all major brands including Avery, Avery-Zweckform, Herma, OnlineLabels.com, and SheetLabels.com. Can't find your template? Request it free and we'll add it within 48 hours."
+      a: "We support 4,000+ templates from all major brands including Avery US, Canada, Zweckform, Australia, France, and UK Templates. Can't find your template? Request it free and we'll add it within 48 hours."
     },
     {
       q: "Is it compatible with Chromebooks?",

@@ -2,8 +2,8 @@ export function Features() {
   const features = [
     {
       icon: <span className="material-symbols-outlined text-[24px]">grid_on</span>,
-      title: "5,000+ Templates",
-      description: "Every major label brand supported — Avery, Herma, OnlineLabels, and more. Just search by product code."
+      title: "4,000+ Templates",
+      description: "Every major label supported — Avery US, Canada, Zweckform, Australia, France, and UK Templates. Just search by product code."
     },
     {
       icon: <span className="material-symbols-outlined text-[24px]">difference</span>,
@@ -14,11 +14,6 @@ export function Features() {
       icon: <span className="material-symbols-outlined text-[24px]">crop_free</span>,
       title: "Print-Perfect Alignment",
       description: "Our templates match manufacturer specs exactly — no more wasted label sheets or misaligned prints."
-    },
-    {
-      icon: <span className="material-symbols-outlined text-[24px]">barcode</span>,
-      title: "100+ Barcode Types",
-      description: "Support for over 100 types of barcodes, including both static and dynamic barcodes for all your label needs."
     },
     {
       icon: <span className="material-symbols-outlined text-[24px]">visibility</span>,
@@ -73,7 +68,7 @@ export function HowItWorks() {
             {
               step: "1",
               title: "Choose a Template",
-              desc: "Search 5,000+ templates by brand or size. Find \"Avery 5160\" or \"2×4 inch\" — we've got you covered."
+              desc: "Search 4,000+ templates by brand or size. Find \"Avery 5160\" or \"2×4 inch\" — we've got you covered."
             },
             {
               step: "2",
@@ -162,7 +157,7 @@ export function Showcase() {
               Whether you need compact return address stickers, massive shipping labels, name tags, or file folder identifiers — we have you fully covered.
             </p>
             <ul className="space-y-4">
-              {['Avery, Herma, OnlineLabels, and more', 'Search by product code or dimensions', 'Request custom templates free'].map((item, i) => (
+              {['Avery US, Canada, Zweckform, Australia, France, UK', 'Search by product code or dimensions', 'Request custom templates free'].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
                   <div className="w-6 h-6 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center shrink-0">
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -192,7 +187,7 @@ export function Showcase() {
                    </div>
                  </div>
                  <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 shadow-sm relative overflow-hidden group hover:border-primary-400 cursor-pointer transition-colors">
-                     <div className="text-sm font-bold text-slate-800">Herma 4282</div>
+                     <div className="text-sm font-bold text-slate-800">Avery 3474</div>
                    <div className="text-xs text-slate-500 mb-2">File Folders</div>
                    <div className="grid grid-rows-4 gap-1 content-start mt-2">
                      <div className="h-3 w-3/4 bg-slate-200 rounded-sm inline-block"></div>
@@ -201,7 +196,7 @@ export function Showcase() {
                    </div>
                  </div>
                  <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 shadow-sm relative overflow-hidden group flex flex-col items-center justify-center text-slate-400 hover:text-primary-600 hover:bg-primary-50 cursor-pointer transition-colors">
-                   <div className="text-2xl font-light mb-1">+5000</div>
+                   <div className="text-2xl font-light mb-1">+4000</div>
                    <div className="text-xs font-medium">More Templates</div>
                  </div>
               </div>

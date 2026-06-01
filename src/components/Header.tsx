@@ -77,7 +77,7 @@ export function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
-              Avery Label Merge is the premier Google Docs & Sheets extension for generating labels compatible with Avery, OnlineLabels, Herma, and many other leading providers. Simply link your spreadsheet, select a template, add dynamic or static QR codes and barcodes, and start printing.
+              Avery Label Merge is the premier Google Docs & Sheets extension for generating labels compatible with Avery US, Canada, Zweckform, Australia, France, and UK Templates. Simply link your spreadsheet, select a template, and start printing.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-4">
