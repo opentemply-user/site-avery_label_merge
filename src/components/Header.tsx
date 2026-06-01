@@ -19,9 +19,22 @@ export function Navbar() {
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="/#features" className="text-slate-600 hover:text-primary-600 font-medium transition-colors">Features</a>
+            
+            {/* Templates Dropdown */}
+            <div className="relative group">
+              <button className="text-slate-600 hover:text-primary-600 font-medium transition-colors flex items-center gap-1 py-4">
+                Templates
+                <span className="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-180">expand_more</span>
+              </button>
+              <div className="absolute top-full left-0 -mt-2 w-48 bg-white border border-slate-200 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden transform origin-top group-hover:translate-y-0 translate-y-2">
+                <div className="py-2">
+                  <Link to="/labels" className="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-primary-600 transition-colors">Labels</Link>
+                  <Link to="/envelopes" className="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-primary-600 transition-colors">Envelopes</Link>
+                </div>
+              </div>
+            </div>
+
             <a href="/#how-it-works" className="text-slate-600 hover:text-primary-600 font-medium transition-colors">How It Works</a>
-            <a href="/#pricing" className="text-slate-600 hover:text-primary-600 font-medium transition-colors">Pricing</a>
-            <Link to="/faq" className="text-slate-600 hover:text-primary-600 font-medium transition-colors">FAQ</Link>
             <Link to="/contact" className="text-slate-600 hover:text-primary-600 font-medium transition-colors">Contact</Link>
             <a 
               href={LINKS.MARKETPLACE_URL} 
@@ -45,9 +58,16 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-4 shadow-lg">
           <a href="/#features" className="block text-slate-600 font-medium py-2" onClick={() => setIsOpen(false)}>Features</a>
+          
+          <div className="py-2">
+            <div className="text-slate-900 font-bold mb-2">Templates</div>
+            <div className="pl-4 space-y-3">
+              <Link to="/labels" className="block text-slate-600 font-medium" onClick={() => setIsOpen(false)}>Labels</Link>
+              <Link to="/envelopes" className="block text-slate-600 font-medium" onClick={() => setIsOpen(false)}>Envelopes</Link>
+            </div>
+          </div>
+
           <a href="/#how-it-works" className="block text-slate-600 font-medium py-2" onClick={() => setIsOpen(false)}>How It Works</a>
-          <a href="/#pricing" className="block text-slate-600 font-medium py-2" onClick={() => setIsOpen(false)}>Pricing</a>
-          <Link to="/faq" className="block text-slate-600 font-medium py-2" onClick={() => setIsOpen(false)}>FAQ</Link>
           <Link to="/contact" className="block text-slate-600 font-medium py-2" onClick={() => setIsOpen(false)}>Contact</Link>
           <a 
             href={LINKS.MARKETPLACE_URL} 
@@ -73,7 +93,7 @@ export function Hero() {
           
           <div className="max-w-2xl">
             <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
-              The Ultimate Mail Merge for Google Docs & Sheets — <span className="text-slate-900">Print Labels in Seconds</span>
+              Create, Customize & Print Avery Labels Instantly
             </h1>
             
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">

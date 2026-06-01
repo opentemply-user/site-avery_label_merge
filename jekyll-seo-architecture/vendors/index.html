@@ -1,0 +1,29 @@
+---
+layout: default
+title: Browse Labels by Vendor
+description: Find label templates organized by manufacturer, including Avery, Herma, and more.
+---
+<h1>Browse by Vendor</h1>
+
+{% assign vendors = site.labels | map: "vendor" | uniq | sort %}
+
+<div style="margin-bottom: 40px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+  <h3>Jump to Vendor:</h3>
+  <ul style="display: flex; gap: 15px; list-style: none; padding: 0; flex-wrap: wrap;">
+    {% for vendor in vendors %}
+      <li><a href="#{{ vendor | slugify }}" style="background: white; padding: 5px 15px; border-radius: 20px; border: 1px solid #ddd; text-decoration: none; color: #333;">{{ vendor }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% for vendor in vendors %}
+  <h2 id="{{ vendor | slugify }}" style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #eaeaea;">{{ vendor }} Templates</h2>
+  <ul style="line-height: 2;">
+    {% assign vendor_labels = site.labels | where: "vendor", vendor %}
+    {% for label in vendor_labels %}
+      <li>
+        <a href="{{ site.baseurl }}{{ label.url }}"><strong>{{ label.name }}</strong></a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

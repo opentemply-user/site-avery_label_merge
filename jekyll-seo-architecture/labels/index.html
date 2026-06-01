@@ -1,0 +1,15 @@
+---
+layout: default
+title: All Label Templates
+description: Browse our collection of thousands of printable label templates for Google Docs and Word.
+---
+<h1>All Label Templates</h1>
+<p>Browse our complete index of label templates.</p>
+
+<ul style="line-height: 2;">
+  {% for label in site.labels %}
+    <li>
+      <a href="{{ site.baseurl }}{{ label.url }}"><strong>{{ label.name }}</strong></a> ({{ label.vendor }}) - {{ label.description | truncatewords: 10 }}
+    </li>
+  {% endfor %}
+</ul>

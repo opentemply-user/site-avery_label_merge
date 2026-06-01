@@ -1,12 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import { Navbar, Hero } from './components/Header';
 import { Features, HowItWorks, Showcase } from './components/Features';
-import { Pricing } from './components/Pricing';
 import { CTA, Footer } from './components/Footer';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { Contact } from './pages/Contact';
 import { FAQ } from './pages/FAQ';
+import { Labels } from './pages/Labels';
+import { Envelopes } from './pages/Envelopes';
+import { LabelTemplate } from './pages/LabelTemplate';
+import { PricingPage } from './pages/PricingPage';
 
 function HomePage() {
   return (
@@ -16,7 +19,6 @@ function HomePage() {
         <Features />
         <HowItWorks />
         <Showcase />
-        <Pricing />
         <CTA />
       </main>
     </>
@@ -34,6 +36,10 @@ export default function App() {
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/labels" element={<Labels />} />
+          <Route path="/labels/:slug" element={<LabelTemplate />} />
+          <Route path="/envelopes" element={<Envelopes />} />
         </Routes>
       </div>
       <Footer />

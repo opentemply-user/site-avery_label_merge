@@ -31,3 +31,20 @@ export const FORMS = {
   // ?subject=Not%20Working       (Prefills Issue/Subject dropdown/Custom input)
   // ?message=Detailed%20issue... (Prefills Detailed Description text area)
 };
+
+export const YOUTUBE_TUTORIAL_VIDEO_ID = "XXXXXXXXXXXXXXXXXXXXXX";
+
+export const TEMPLATE_SECTIONS: Record<string, { title: string; description: string }> = {
+  "S0": {
+    "title": "Most Popular Templates",
+    "description": "Discover the most frequently used and downloaded label, card, and business templates."
+  },
+  "S2": {
+    "title": "Avery US",
+    "description": "Explore popular Avery US templates for labels, business cards, name badges, shipping labels, and more."
+  },
+  "S3": {
+    "title": "Avery Zweckform",
+    "description": "Browse top Avery Zweckform templates designed for European label formats, office products, and business printing needs."
+  }
+};

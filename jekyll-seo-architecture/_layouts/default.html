@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% include seo.html %}
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; color: #333; }
+    header { border-bottom: 1px solid #eaeaea; padding-bottom: 20px; margin-bottom: 40px; }
+    nav a { margin-right: 15px; color: #0066cc; text-decoration: none; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+    .btn { display: inline-block; padding: 10px 15px; background: #0066cc; color: white; border-radius: 6px; text-decoration: none; margin-right: 10px; margin-bottom: 10px; font-weight: bold; }
+    .btn:hover { background: #0052a3; }
+    .breadcrumb { font-size: 0.9em; color: #666; margin-bottom: 20px; }
+    .breadcrumb a { color: #0066cc; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/labels/">All Labels</a>
+      <a href="/vendors/">Browse by Vendor</a>
+    </nav>
+  </header>
+  
+  <main>
+    {{ content }}
+  </main>
+  
+  <footer style="margin-top: 60px; border-top: 1px solid #eaeaea; padding-top: 20px; font-size: 0.9em; color: #666;">
+    <p>&copy; Avery Label Merge. All rights reserved.</p>
+  </footer>
+</body>
+</html>

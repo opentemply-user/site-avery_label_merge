@@ -1,0 +1,9 @@
+title: Avery Label Merge
+description: The ultimate mail merge for Google Docs & Sheets. Print labels in seconds.
+url: "https://averylabelmerge.opentemply.com"
+baseurl: ""
+
+collections:
+  labels:
+    output: true
+    permalink: /labels/:slug/
