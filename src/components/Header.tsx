@@ -73,7 +73,7 @@ export function Hero() {
           
           <div className="max-w-2xl">
             <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
-              Design Flawless Labels in Google Docs & Sheets — <span className="text-slate-900">In Minutes, Not Hours</span>
+              The Ultimate Mail Merge for Google Docs & Sheets — <span className="text-slate-900">Print Labels in Seconds</span>
             </h1>
             
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">

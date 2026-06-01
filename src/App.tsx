@@ -7,7 +7,6 @@ import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { Contact } from './pages/Contact';
 import { FAQ } from './pages/FAQ';
-import { BarcodesShowcase } from './components/Barcodes';
 
 function HomePage() {
   return (
@@ -17,7 +16,6 @@ function HomePage() {
         <Features />
         <HowItWorks />
         <Showcase />
-        <BarcodesShowcase />
         <Pricing />
         <CTA />
       </main>
